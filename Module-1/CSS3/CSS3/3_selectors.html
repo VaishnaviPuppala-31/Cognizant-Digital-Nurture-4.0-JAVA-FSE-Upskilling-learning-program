@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Selectors Playground</title>
+
+  <style>
+    /* ================================
+       Universal Selector
+       ================================ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ================================
+       Element Selector
+       ================================ */
+    h2 {
+      color: #2c3e50;
+      font-size: 1.8rem;
+      margin: 20px 0;
+    }
+
+    /* ================================
+       ID Selector
+       ================================ */
+    #mainHeader {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* ================================
+       Class Selector
+       ================================ */
+    .eventCard {
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 15px;
+      border-radius: 6px;
+    }
+
+    /* ================================
+       Grouping Selector
+       ================================ */
+    h3, p {
+      font-family: 'Arial', sans-serif;
+      margin-bottom: 10px;
+      color: #333;
+    }
+  </style>
+
+</head>
+<body>
+
+  <header id="mainHeader">
+    <h1>Welcome to the Event Portal</h1>
+  </header>
+
+  <section>
+    <h2>Upcoming Events</h2>
+
+    <div class="eventCard">
+      <h3>Hackathon 2025</h3>
+      <p>Join developers from around the world in this 48-hour event.</p>
+    </div>
+
+    <div class="eventCard">
+      <h3>Design Conference</h3>
+      <p>Explore the future of digital design and UX.</p>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link and List Styling</title>
+  <style>
+    /* ==============================
+       Link Styling
+       ============================== */
+    a:link {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #6c757d;
+    }
+
+    a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: #dc3545;
+    }
+
+    /* ==============================
+       Navigation Menu Styling
+       ============================== */
+    nav ul {
+      list-style-type: none; /* Remove bullets */
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav li {
+      padding: 10px 15px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+    }
+
+    /* ==============================
+       Custom List Styling
+       ============================== */
+    .custom-list {
+      list-style-type: square; /* Use square bullets */
+      list-style-position: inside;
+      padding-left: 20px;
+    }
+
+    .custom-list li {
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Website Navigation & Content</h1>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Custom Styled List -->
+  <section>
+    <h2>Our Features</h2>
+    <ul class="custom-list">
+      <li>Responsive Design</li>
+      <li>SEO Optimization</li>
+      <li>24/7 Support</li>
+      <li>Performance Tracking</li>
+    </ul>
+  </section>
+
+</body>
+</html>

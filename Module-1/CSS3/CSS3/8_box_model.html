@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model & Layout Control</title>
+  <style>
+    /* Event Card Styling */
+    .eventCard {
+      border: 2px solid #007BFF;
+      padding: 20px;
+      margin: 30px auto;
+      width: 80%;
+      background-color: #f8f9fa;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Outline for selected fields */
+    input:focus, textarea:focus {
+      outline: 2px dashed #28a745;
+      background-color: #e9f5ee;
+    }
+
+    /* Comparison section */
+    .hidden-box {
+      background-color: #ffc107;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .visibility-hidden {
+      visibility: hidden;
+    }
+
+    .display-none {
+      display: none;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    form {
+      margin: 20px auto;
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="eventCard">
+    <h2>Community Picnic</h2>
+    <p>Join us for a fun-filled day with food, games, and activities at Central Park!</p>
+  </div>
+
+  <form>
+    <h3>Event Registration</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" class="form-control">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" class="form-control">
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" class="form-control"></textarea>
+  </form>
+
+  <div>
+    <h3>Box Visibility Comparison</h3>
+    <div class="hidden-box visibility-hidden">This box uses <strong>visibility: hidden</strong></div>
+    <div class="hidden-box display-none">This box uses <strong>display: none</strong></div>
+    <div class="hidden-box">This box is <strong>visible</strong></div>
+  </div>
+
+</body>
+</html>

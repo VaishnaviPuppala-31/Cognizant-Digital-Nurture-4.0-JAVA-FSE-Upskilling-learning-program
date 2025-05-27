@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Events Admin Table</title>
+  <style>
+    /* Base table styles */
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header and cell styling */
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px 15px;
+    }
+
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    /* Zebra striping */
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #e9ecef;
+    }
+
+    caption {
+      caption-side: top;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Upcoming Events</caption>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Event Name</th>
+        <th>Date</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Community Meeting</td>
+        <td>2025-06-01</td>
+        <td>Town Hall</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Summer Festival</td>
+        <td>2025-07-15</td>
+        <td>Main Street</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Clean-Up Drive</td>
+        <td>2025-08-10</td>
+        <td>Central Park</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Art Exhibition</td>
+        <td>2025-09-05</td>
+        <td>City Gallery</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
